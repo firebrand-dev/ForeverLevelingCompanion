@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forever Leveling Companion</title>
+<meta name="description" content="Free leveling guide, quest tracker and Party Mode addon for World of Warcraft: Forever.">
+<link rel="stylesheet" href="style.css">
+<script>
+  // language: saved choice, else the browser's; both texts are in the page
+  (function () {
+    var lang = "en";
+    try { lang = localStorage.getItem("flc-lang") || ""; } catch (e) { lang = ""; }
+    if (!lang) lang = (navigator.language || "en").toLowerCase().indexOf("es") === 0 ? "es" : "en";
+    document.documentElement.lang = lang;
+  })();
+</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Forever Leveling Companion</a>
+    <nav class="links">
+      <a href="#features"><span data-lang="en">Features</span><span data-lang="es">Funciones</span></a>
+      <a href="#download"><span data-lang="en">Download</span><span data-lang="es">Descarga</span></a>
+      <a href="#docs"><span data-lang="en">Docs</span><span data-lang="es">Documentación</span></a>
+      <a href="#changelog">Changelog</a>
+      <a href="#support"><span data-lang="en">Support</span><span data-lang="es">Apoyar</span></a>
+      <a href="#legal"><span data-lang="en">Licenses</span><span data-lang="es">Licencias</span></a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set-lang="en">EN</button>
+      <button type="button" data-set-lang="es">ES</button>
+    </div>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+  <div class="hero">
+    <div>
+      <h1>
+        <span data-lang="en">Level up in WoW: Forever, alone or with friends.</span>
+        <span data-lang="es">Subí de nivel en WoW: Forever, solo o con amigos.</span>
+      </h1>
+      <p class="lead">
+        <span data-lang="en">A free leveling guide with an arrow, a quest tracker that keeps your party informed, and a Party Mode that lets you help a friend without losing your own place.</span>
+        <span data-lang="es">Una guía de subida de nivel gratuita con flecha, un seguimiento de misiones que mantiene informado a tu grupo y un Modo Grupo para ayudar a un amigo sin perder tu lugar.</span>
+      </p>
+      <div class="badges">
+        <span class="badge">v0.8.1</span>
+        <span class="badge"><span data-lang="en">100% free</span><span data-lang="es">100% gratis</span></span>
+        <span class="badge"><span data-lang="en">No premium, no ads</span><span data-lang="es">Sin premium ni publicidad</span></span>
+        <span class="badge"><span data-lang="en">10 languages</span><span data-lang="es">10 idiomas</span></span>
+      </div>
+      <div class="actions">
+        <a class="btn" href="#download"><span data-lang="en">Download free</span><span data-lang="es">Descargar gratis</span></a>
+        <a class="btn secondary" href="#docs"><span data-lang="en">How it works</span><span data-lang="es">Cómo funciona</span></a>
+      </div>
+    </div>
+    <img class="shot" src="img/party-help.png" width="590" height="420"
+         alt="FLC window helping a party member: the route for Flcdos, kill together, and the member's progress in the tracker">
+  </div>
+
+  <section id="features">
+    <h2><span data-lang="en">Features</span><span data-lang="es">Funciones</span></h2>
+    <p class="sub"><span data-lang="en">Everything is included. Nothing is locked.</span><span data-lang="es">Todo está incluido. Nada está bloqueado.</span></p>
+    <div class="grid">
+      <div class="card">
+        <h3><span data-lang="en">Step-by-step guide</span><span data-lang="es">Guía paso a paso</span></h3>
+        <p><span data-lang="en">Each step says what to do and with what — “Kill: Mottled Boar”, “Loot the object: Water Pitcher” — with every objective's count.</span>
+           <span data-lang="es">Cada paso dice qué hacer y con qué — “Matar: Jabaly moteado”, “Saquear el objeto: Jarra de agua” — con el conteo de cada objetivo.</span></p>
+      </div>
+      <div class="card">
+        <h3><span data-lang="en">Arrow and waypoints</span><span data-lang="es">Flecha y puntos de ruta</span></h3>
+        <p><span data-lang="en">An arrow to the next place, “In the area” when the targets are spread out, and optional TomTom or map waypoints.</span>
+           <span data-lang="es">Una flecha al próximo lugar, “En la zona” cuando los objetivos están repartidos, y puntos de ruta opcionales de TomTom o del mapa.</span></p>
+      </div>
+      <div class="card">
+        <h3><span data-lang="en">Quest tracker</span><span data-lang="es">Seguimiento de misiones</span></h3>
+        <p><span data-lang="en">Your quests and your party's progress, with optional announcements in party chat (6 modes, never spammy).</span>
+           <span data-lang="es">Tus misiones y el progreso de tu grupo, con anuncios opcionales en el chat de grupo (6 modos, sin spam).</span></p>
+      </div>
+      <div class="card">
+        <h3><span data-lang="en">Help Player</span><span data-lang="es">Ayudar a un jugador</span></h3>
+        <p><span data-lang="en">Follow a friend's route for a while. Your own guide is saved and you return exactly where you left it.</span>
+           <span data-lang="es">Seguí la ruta de un amigo un rato. Tu guía se guarda y volvés exactamente donde la dejaste.</span></p>
+      </div>
+      <div class="card">
+        <h3><span data-lang="en">Level Together and Catch-Up</span><span data-lang="es">Subir juntos y Ponerse al día</span></h3>
+        <p><span data-lang="en">Routes for the whole group, weighted toward whoever is behind.</span>
+           <span data-lang="es">Rutas para todo el grupo, priorizando a quien va atrás.</span></p>
+      </div>
+      <div class="card">
+        <h3><span data-lang="en">Dungeon Focus</span><span data-lang="es">Foco en mazmorras</span></h3>
+        <p><span data-lang="en">Dungeons that fit the party's levels and the quests to pick up before going in.</span>
+           <span data-lang="es">Mazmorras acordes al nivel del grupo y las misiones para tomar antes de entrar.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="screens">
+    <h2><span data-lang="en">In the game</span><span data-lang="es">En el juego</span></h2>
+    <p class="sub"><span data-lang="en">Real screenshots from the game.</span>
+       <span data-lang="es">Capturas reales del juego.</span></p>
+    <div class="grid">
+      <figure class="card"><img class="shot" src="img/guide.png" width="590" height="420" alt="Guide step Kill: Mottled Boar with the quest tracker">
+        <figcaption><span data-lang="en">A step and its counts</span><span data-lang="es">Un paso y sus conteos</span></figcaption></figure>
+      <figure class="card"><img class="shot" src="img/party-help.png" width="590" height="420" alt="Helping a party member: their route and progress">
+        <figcaption><span data-lang="en">Helping a friend</span><span data-lang="es">Ayudando a un amigo</span></figcaption></figure>
+      <figure class="card"><img class="shot" src="img/level-together.png" width="590" height="440" alt="Group route for two players">
+        <figcaption><span data-lang="en">Level together</span><span data-lang="es">Subir juntos</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section id="download">
+    <h2><span data-lang="en">Download</span><span data-lang="es">Descarga</span></h2>
+    <p class="sub"><span data-lang="en">Free. Version 0.8.1, for WoW: Forever (client 1.60).</span><span data-lang="es">Gratis. Versión 0.8.1, para WoW: Forever (cliente 1.60).</span></p>
+    <div class="card">
+      <h3>Forever Leveling Companion 0.8.1</h3>
+      <p><span data-lang="en">The addon and its quest catalog (routes for most zones) in one zip: two folders, install both.</span><span data-lang="es">El addon y su catálogo de misiones (rutas para la mayoría de las zonas) en un solo zip: dos carpetas, instalá las dos.</span></p><p style="margin-top:14px"><a class="btn" href="https://github.com/firebrand-dev/ForeverLevelingCompanion/releases/latest" rel="noopener" target="_blank"><span data-lang="en">Download from GitHub Releases</span><span data-lang="es">Descargar desde GitHub Releases</span></a> <a class="btn" href="downloads/FLC-0.8.1.zip"><span data-lang="en">This page</span><span data-lang="es">Esta página</span>: FLC-0.8.1.zip</a></p><p class="note" style="margin-top:8px">SHA-256: <code style="word-break:break-all">2c2a44713c999fe7ffeec3860be0351e307072782f51b89ceb56173e762050e0</code></p><p class="note" style="margin-top:8px"><span data-lang="en">Something wrong? In the game type /flc bug or /flc review and </span><span data-lang="es">¿Algo anda mal? En el juego escribí /flc bug o /flc review y </span><a href="https://github.com/firebrand-dev/FLC-reportes/issues/new/choose" rel="noopener" target="_blank"><span data-lang="en">report it here</span><span data-lang="es">reportalo acá</span></a>.</p>
+    </div>
+    <h3 style="margin-top:28px"><span data-lang="en">Install</span><span data-lang="es">Instalación</span></h3>
+    <ol class="steps">
+      <li><span data-lang="en">Close the game.</span><span data-lang="es">Cerrá el juego.</span></li>
+      <li><span data-lang="en">Extract the zip into</span><span data-lang="es">Extraé el zip en</span> <code>World of Warcraft\_forever_\Interface\AddOns\</code></li>
+      <li><span data-lang="en">You should see</span><span data-lang="es">Tienen que quedar</span> <code>ForeverLevelingCompanion</code> <span data-lang="en">and</span><span data-lang="es">y</span> <code>FLC_Guides_Catalog</code>.</li>
+      <li><span data-lang="en">Updating: delete the old folders first, then extract the new zip.</span><span data-lang="es">Para actualizar: borrá primero las carpetas viejas y después extraé el zip nuevo.</span></li>
+      <li><span data-lang="en">Start the game and type</span><span data-lang="es">Abrí el juego y escribí</span> <code>/flc</code>.</li>
+    </ol>
+  </section>
+
+  <section id="docs">
+    <h2><span data-lang="en">How it works</span><span data-lang="es">Cómo funciona</span></h2>
+    <div class="two">
+      <div>
+        <p><span data-lang="en">FLC picks a guide for your character and shows the next step. Steps complete by themselves when the game confirms them (quest accepted, objectives counted, quest turned in). Use <code>Skip</code> for anything you want to leave out.</span>
+           <span data-lang="es">FLC elige una guía para tu personaje y muestra el próximo paso. Los pasos se completan solos cuando el juego los confirma (misión aceptada, objetivos contados, misión entregada). Usá <code>Skip</code> para saltear lo que no quieras hacer.</span></p>
+        <p><span data-lang="en">In a party, members who also use FLC share quest progress (only after each one agrees with <code>/flc share yes</code>, and only with the group).</span>
+           <span data-lang="es">En grupo, los miembros que también usan FLC comparten el progreso de las misiones (solo si cada uno acepta con <code>/flc share yes</code>, y solo con el grupo).</span></p>
+        <img class="shot" src="img/guide.png" width="590" height="420" alt="FLC guide window with the step Kill: Mottled Boar and the quest tracker">
+      </div>
+      <div class="table-scroll">
+        <table>
+          <tr><th><span data-lang="en">Command</span><span data-lang="es">Comando</span></th><th><span data-lang="en">What it does</span><span data-lang="es">Qué hace</span></th></tr>
+          <tr><td><code>/flc</code></td><td><span data-lang="en">Show or hide the guide window</span><span data-lang="es">Muestra u oculta la ventana de la guía</span></td></tr>
+          <tr><td><code>/flc party</code></td><td><span data-lang="en">Party Mode: members, Help, Level together, Catch-up, Dungeons, Return</span><span data-lang="es">Modo Grupo: miembros, Ayudar, Subir juntos, Ponerse al día, Mazmorras, Volver</span></td></tr>
+          <tr><td><code>/flc help &lt;name&gt;</code></td><td><span data-lang="en">Follow a party member's route</span><span data-lang="es">Seguir la ruta de un miembro del grupo</span></td></tr>
+          <tr><td><code>/flc return</code></td><td><span data-lang="en">Back to your own guide, where you left it</span><span data-lang="es">Volver a tu guía, donde la dejaste</span></td></tr>
+          <tr><td><code>/flc tracker</code></td><td><span data-lang="en">Quest tracker with party progress</span><span data-lang="es">Seguimiento de misiones con el progreso del grupo</span></td></tr>
+          <tr><td><code>/flc announce &lt;mode&gt;</code></td><td><span data-lang="en">Party chat announcements: off, objectives, pct25, pct50, every, default</span><span data-lang="es">Anuncios en el chat de grupo: off, objectives, pct25, pct50, every, default</span></td></tr>
+          <tr><td><code>/flc share yes|no</code></td><td><span data-lang="en">Allow sharing your quest progress with your party</span><span data-lang="es">Permitir compartir tu progreso con el grupo</span></td></tr>
+          <tr><td><code>/flc guide auto|&lt;id&gt;</code></td><td><span data-lang="en">Pick a guide again</span><span data-lang="es">Elegir una guía de nuevo</span></td></tr>
+          <tr><td><code>/flc options</code>, <code>/flc diag</code></td><td><span data-lang="en">Options; a diagnostics report to paste when reporting a problem</span><span data-lang="es">Opciones; un informe de diagnóstico para pegar al reportar un problema</span></td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="changelog" class="changelog">
+    <h2>Changelog</h2>
+    <h3>0.8.1 — 2026-11-04</h3>
+<ul><li><strong>First public version.</strong> Leveling guides with an arrow, quest tracking and Party Mode (help a player, level together).</li><li><strong>Guides window</strong> (<code>/flc guides</code>): choose the guide to follow. Leveling routes by zone, dungeon and raid guides, only your character's, with their levels and your progress. Automatic gives the choice back to FLC.</li><li><strong>Quests by themselves</strong>: FLC accepts and turns in the guide's quests (never in combat, never with Shift held). On a reward choice FLC never picks: it marks the one that helps you, or the one a vendor pays most for. <code>/flc auto</code> or Options to turn it off.</li><li><strong>Minimap button</strong>: left click shows or hides FLC; right click, a menu with Guides, Loot Atlas, Party Mode, Appearance, Options and Report a bug. Shift + drag moves it.</li><li>Dungeon (23) and raid (12) guides: the way in, the quest objectives inside, each boss in the game's order, the way out. Boss card with its abilities; what is not confirmed yet carries "(?)".</li><li>Class and dungeon quest advisors, Smart Loot Advisor and Loot Atlas with a wishlist.</li><li>Adaptive look: adapts to ElvUI, Tukui, NDui, RealUI, SpartanUI and GW2 UI, or to one of its own skins. Welcome setup on the first start (<code>/flc setup</code>).</li><li><code>/flc review</code> and <code>/flc bug</code> make a text to copy and report; <code>/flc version</code> tells you when someone in your group has a newer version.</li></ul>
+  </section>
+
+  <section id="support">
+    <h2>Support Development</h2>
+    <div class="support">
+      <p><span data-lang="en">Forever Leveling Companion is free and always will be: every feature, every route, for everyone. If it helps you and you want to support its development, you can make a voluntary donation here.</span>
+         <span data-lang="es">Forever Leveling Companion es gratis y lo va a seguir siendo: todas las funciones y todas las rutas, para todos. Si te sirve y querés apoyar su desarrollo, podés hacer una donación voluntaria acá.</span></p>
+      <p class="note"><span data-lang="en">Donation links are coming soon.</span><span data-lang="es">Los links de donación van a estar disponibles pronto.</span></p>
+      <ul class="promise">
+        <li><span data-lang="en">Donations give no perks, no exclusive content and no early access. Everyone gets the same addon.</span><span data-lang="es">Las donaciones no dan ventajas, contenido exclusivo ni acceso anticipado. Todos tienen el mismo addon.</span></li>
+        <li><span data-lang="en">The addon never asks for money, never shows ads and has no donation buttons in the game.</span><span data-lang="es">El addon nunca pide dinero, no muestra publicidad y no tiene botones de donación dentro del juego.</span></li>
+        <li><span data-lang="en">Not donating is perfectly fine. Reporting bugs and sharing the addon helps just as much.</span><span data-lang="es">No donar está perfecto. Reportar errores y recomendar el addon ayuda igual.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <details><summary><span data-lang="en">Is it really free?</span><span data-lang="es">¿Es realmente gratis?</span></summary>
+      <p><span data-lang="en">Yes. There is no premium version and nothing is locked. Blizzard's add-on policy requires add-ons to be free, and FLC follows it.</span><span data-lang="es">Sí. No hay versión premium y nada está bloqueado. La política de addons de Blizzard exige que sean gratuitos, y FLC la cumple.</span></p></details>
+    <details><summary><span data-lang="en">Does it work without the quest catalog?</span><span data-lang="es">¿Funciona sin el catálogo de misiones?</span></summary>
+      <p><span data-lang="en">Yes, with its built-in sample guides. The catalog pack adds routes for most zones.</span><span data-lang="es">Sí, con sus guías de ejemplo. El paquete del catálogo agrega rutas para la mayoría de las zonas.</span></p></details>
+    <details><summary><span data-lang="en">Does it send my data anywhere?</span><span data-lang="es">¿Envía mis datos a algún lado?</span></summary>
+      <p><span data-lang="en">No. Nothing leaves the game. Quest progress is shared only with your party, only after you agree, and only for the quests involved.</span><span data-lang="es">No. Nada sale del juego. El progreso se comparte solo con tu grupo, solo si aceptás, y solo de las misiones involucradas.</span></p></details>
+    <details><summary><span data-lang="en">The arrow or a step looks wrong. What do I do?</span><span data-lang="es">La flecha o un paso parecen estar mal. ¿Qué hago?</span></summary>
+      <p><span data-lang="en">Type <code>/flc review</code> on that step, copy the text and report it at <a href="https://github.com/firebrand-dev/FLC-reportes" rel="noopener" target="_blank">FLC-reportes</a> with what the game shows. What is not confirmed yet is marked "in review".</span><span data-lang="es">Escribí <code>/flc review</code> en ese paso, copiá el texto y reportalo en <a href="https://github.com/firebrand-dev/FLC-reportes" rel="noopener" target="_blank">FLC-reportes</a> con lo que muestra el juego. Lo que todavía no está confirmado dice "en revisión".</span></p></details>
+  </section>
+  <section id="legal">
+    <h2><span data-lang="en">Licenses and credits</span><span data-lang="es">Licencias y créditos</span></h2>
+    <div class="two">
+      <div class="card">
+        <h3>Forever Leveling Companion</h3>
+        <p><span data-lang="en">© 2026 the Forever Leveling Companion authors. Free to use. The code is plain, readable Lua, as Blizzard's add-on policy requires; redistribution or modified copies need the authors' permission.</span>
+           <span data-lang="es">© 2026 los autores de Forever Leveling Companion. De uso gratuito. El código es Lua legible, como exige la política de addons de Blizzard; redistribuirlo o publicar versiones modificadas requiere permiso de los autores.</span></p>
+      </div>
+      <div class="card">
+        <h3><span data-lang="en">Quest catalog</span><span data-lang="es">Catálogo de misiones</span></h3>
+        <p><span data-lang="en">Built from the world databases of TrinityCore, VMaNGOS and the advocaite/TrinityCore "forever" branch, all GPL-2.0. Thanks to their authors and contributors. When it is distributed, it ships as its own folder under GPL-2.0 with its license text, notice and provenance report.</span>
+           <span data-lang="es">Construido a partir de las bases de datos de mundo de TrinityCore, VMaNGOS y la rama "forever" de advocaite/TrinityCore, todas GPL-2.0. Gracias a sus autores y colaboradores. Cuando se distribuya, va en su propia carpeta bajo GPL-2.0, con su texto de licencia, aviso y origen de los datos.</span></p>
+      </div>
+    </div>
+    <p class="note"><span data-lang="en">Quest, NPC and object names shown in the game are Blizzard Entertainment's. World of Warcraft is a trademark of Blizzard Entertainment, Inc. FLC is a fan project, not affiliated with or endorsed by Blizzard.</span>
+       <span data-lang="es">Los nombres de misiones, PNJ y objetos que se ven en el juego son de Blizzard Entertainment. World of Warcraft es una marca de Blizzard Entertainment, Inc. FLC es un proyecto de fans, no afiliado ni respaldado por Blizzard.</span></p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Forever Leveling Companion 0.8.1 — © 2026 <span data-lang="en">the FLC authors. Free to use.</span><span data-lang="es">los autores de FLC. De uso gratuito.</span></p>
+    <p><span data-lang="en">Quest catalog pack: GPL-2.0, built from TrinityCore, VMaNGOS and the advocaite/TrinityCore forever branch. Thanks to their contributors.</span>
+       <span data-lang="es">Paquete del catálogo: GPL-2.0, construido a partir de TrinityCore, VMaNGOS y la rama forever de advocaite/TrinityCore. Gracias a sus colaboradores.</span></p>
+    <p><span data-lang="en">World of Warcraft and Blizzard Entertainment are trademarks of Blizzard Entertainment, Inc. FLC is a fan project, not affiliated with or endorsed by Blizzard.</span>
+       <span data-lang="es">World of Warcraft y Blizzard Entertainment son marcas de Blizzard Entertainment, Inc. FLC es un proyecto de fans, no afiliado ni respaldado por Blizzard.</span></p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    function set(lang) {
+      document.documentElement.lang = lang;
+      try { localStorage.setItem("flc-lang", lang); } catch (e) {}
+      var bs = document.querySelectorAll("[data-set-lang]");
+      for (var i = 0; i < bs.length; i++) bs[i].setAttribute("aria-pressed", String(bs[i].getAttribute("data-set-lang") === lang));
+    }
+    var bs = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < bs.length; i++) bs[i].addEventListener("click", function () { set(this.getAttribute("data-set-lang")); });
+    set(document.documentElement.lang === "es" ? "es" : "en");
+  })();
+</script>
+</body>
+</html>

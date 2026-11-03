@@ -1,0 +1,54 @@
+Forever Leveling Companion (FLC) - instalación / install
+=========================================================
+
+ESPAÑOL
+-------
+Este zip trae dos carpetas de addon:
+  ForeverLevelingCompanion   el addon (guía, flecha, seguimiento de misiones, Modo Grupo)
+  FLC_Guides_Catalog         el catálogo de misiones y rutas (licencia GPL-2.0, ver su COPYING.txt)
+
+1. Cerrá el juego.
+2. Extraé el zip en la carpeta de addons de WoW Forever:
+     World of Warcraft\_forever_\Interface\AddOns\
+   (si tu instalación usa otro nombre de carpeta, buscá la que contiene "Interface\AddOns").
+3. Tienen que quedar estas dos carpetas, una al lado de la otra:
+     ...\Interface\AddOns\ForeverLevelingCompanion\
+     ...\Interface\AddOns\FLC_Guides_Catalog\
+   No tiene que quedar una carpeta dentro de otra con el mismo nombre.
+4. Abrí el juego. En la pantalla de personajes, botón "AddOns": las dos tienen que estar activadas.
+5. La primera vez se abre la configuración inicial: adaptar el aspecto de FLC a tu interfaz, configurarlo u omitir.
+   Se puede volver a abrir con /flc setup. En el juego, /flc muestra u oculta la guía; /flc options, las opciones.
+
+Actualizar: borrá primero las dos carpetas viejas y después extraé el zip nuevo. /flc version dice qué versión
+tenés y dónde bajar la nueva: https://github.com/firebrand-dev/ForeverLevelingCompanion/releases/latest
+Desinstalar: borrá las dos carpetas.
+
+FLC es gratuito: no hay versión premium ni funciones bloqueadas.
+Si algo falla: /flc bug (un error) o /flc review (un dato que no coincide con el juego) arman un texto para copiar
+y pegar en https://github.com/firebrand-dev/FLC-reportes (hace falta una cuenta de GitHub, es gratis).
+
+ENGLISH
+-------
+This zip holds two add-on folders:
+  ForeverLevelingCompanion   the add-on (guide, arrow, quest tracker, Party Mode)
+  FLC_Guides_Catalog         the quest and route catalog (GPL-2.0 license, see its COPYING.txt)
+
+1. Close the game.
+2. Extract the zip into WoW Forever's add-on folder:
+     World of Warcraft\_forever_\Interface\AddOns\
+   (if your install uses another folder name, look for the one that contains "Interface\AddOns").
+3. You should see these two folders side by side:
+     ...\Interface\AddOns\ForeverLevelingCompanion\
+     ...\Interface\AddOns\FLC_Guides_Catalog\
+   There must not be a folder inside another one with the same name.
+4. Start the game. On the character screen, "AddOns" button: both must be enabled.
+5. The first time, the welcome setup opens: adapt FLC's look to your interface, configure it or skip.
+   /flc setup opens it again. In the game, /flc shows or hides the guide; /flc options, the options.
+
+Updating: delete the two old folders first, then extract the new zip. /flc version says which version you have
+and where to get the new one: https://github.com/firebrand-dev/ForeverLevelingCompanion/releases/latest
+Uninstalling: delete the two folders.
+
+FLC is free: there is no premium version and nothing is locked.
+If something goes wrong: /flc bug (an error) or /flc review (data that does not match the game) make a text to
+copy and paste at https://github.com/firebrand-dev/FLC-reportes (a free GitHub account is needed).

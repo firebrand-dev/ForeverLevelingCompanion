@@ -1,0 +1,14 @@
+Forever Leveling Companion (FLC) - the addon code and its original sample guides
+Copyright (c) 2026 the Forever Leveling Companion authors. All rights reserved.
+
+You may download, install and use this addon free of charge for your own play. The source is plain, readable Lua,
+as Blizzard's UI Add-On Development Policy requires; being able to read it does not grant a license to it.
+
+Without written permission from the authors you may not redistribute, sell, sublicense or publish modified copies
+of this addon or of parts of it.
+
+This folder contains no third-party code and no data from emulator databases. Guide and route libraries are
+separate addons ("guide packs") with their own license and provenance; installing one does not change this notice.
+
+World of Warcraft and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc.
+This addon is not affiliated with or endorsed by Blizzard Entertainment.
