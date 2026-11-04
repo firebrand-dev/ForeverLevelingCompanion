@@ -2,7 +2,16 @@
 
 The players' changelog, shown on the website (tools/build_site.py). The developers' record is CHANGELOG.md.
 
-## 0.8.1 — 2026-11-04
+## 0.8.1.1 — 2026-11-04
+
+Two fixes on top of 0.8.1, for the WoW: Forever launch. No new features. Tested with the game client 1.60.1.70755 on
+our own private test server (not on the official realms).
+
+- **FLC's "Quests" window now takes the game's quest tracker's place**, under the minimap and its clock (at any
+  resolution), while the game's tracker is hidden. If you moved it, it stays where you put it.
+- A step that needs a higher level now says the level ("Requires level 10") instead of "Requires level 0".
+
+## 0.8.1 — 2026-11-03
 
 - **First public version.** Leveling guides with an arrow, quest tracking and Party Mode (help a player, level
   together).

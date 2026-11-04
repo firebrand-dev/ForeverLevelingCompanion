@@ -18,7 +18,8 @@ GPL-2.0 projects. Thanks to their authors and contributors:
 - **advocaite/TrinityCore**, "forever" branch (WoW: Forever support, quest levels and spawns captured from the
   official beta): https://github.com/advocaite/TrinityCore
 
-The pack is distributed under GPL-2.0, separately from the addon (`FLC_Guides_Catalog/NOTICE.md`, `PROVENANCE.md`).
+The pack is distributed under GPL-2.0, separately from the addon (`FLC_Guides_Catalog/NOTICE.md`, `FLC_Guides_Catalog/COPYING.txt`); its corresponding source is attached to
+each release (`FLC_Guides_Catalog-<version>-source.zip`).
 
 ## Tools used to build and test FLC
 
