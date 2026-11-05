@@ -2,6 +2,18 @@
 
 The players' changelog, shown on the website (tools/build_site.py). The developers' record is CHANGELOG.md.
 
+## 0.8.1.2 — 2026-11-04
+
+Two fixes on top of 0.8.1.1, from the first games on the official realms. No new features. Tested with the game client
+1.60.1.70755 on our own private test server (not on the official realms).
+
+- **A quest its NPC does not offer you yet**: on the official realms some quests ask for a higher level or an earlier
+  quest that our data does not have. When you talk to the NPC and the quest is not in its list, FLC now tells you in
+  chat and goes on with the guide. It tries again after a level up, after you turn in a quest to that NPC, or when the
+  NPC offers it. `/flc review` shows it so you can report it.
+- **The game's quest tracker after a fight**: when the game showed it again during combat, it stayed over FLC's
+  "Quests" window. FLC now hides it again when the fight ends.
+
 ## 0.8.1.1 — 2026-11-04
 
 Two fixes on top of 0.8.1, for the WoW: Forever launch. No new features. Tested with the game client 1.60.1.70755 on
