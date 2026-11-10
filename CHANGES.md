@@ -2,6 +2,26 @@
 
 The players' changelog, shown on the website (tools/build_site.py). The developers' record is CHANGELOG.md.
 
+## 0.8.1.3 — 2026-11-10
+
+A maintenance release: everything we fixed since 0.8.1.2 so the guide takes you from quest to quest better, and a few
+new helpers. Tested with the game client 1.60.1.70755; what is not confirmed says "in review". The release notes have
+the full list and the known limitations.
+
+- **The guide**: quests in any order (the ones you skipped and still have come back), < and > to look at other steps,
+  **Current**, the nearest quests of your area first, quests on your way, better Skip and Undo, and level waits that
+  pass when you can already go on.
+- **Which quests it shows**: no quests your race, class or faction can never have; profession quests only when you
+  have the profession; group quests optional when you play alone; chains that wait for another quest are said
+  ("Pending").
+- **The reward window says why**: green "Best" for a real upgrade, orange "Sell" for the best vendor price, grey
+  "Swap" for a change of weapon setup; weapons are compared as a set.
+- **Navigation line** on the world map and the minimap, **Loot Atlas** levels and summaries, and **Party Mode** offers
+  to help a party member who is behind (it also works with FLC 0.8.1.2).
+- New version notice through your guild, and less memory at load.
+- **Known limitations**: the leveling path ends at level 58 and some routes have extra crossings or detours; some class
+  quests are not on the path; the Spanish texts are in review.
+
 ## 0.8.1.2 — 2026-11-04
 
 Two fixes on top of 0.8.1.1, from the first games on the official realms. No new features. Tested with the game client
