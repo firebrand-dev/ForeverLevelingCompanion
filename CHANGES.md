@@ -2,6 +2,21 @@
 
 The players' changelog, shown on the website (tools/build_site.py). The developers' record is CHANGELOG.md.
 
+## 0.8.1.4 — 2026-11-16
+
+A Loot Atlas release: its items now work like the game's item links and the list is sorted by the level you need to
+equip them. The leveling guide is unchanged from 0.8.1.3.
+
+- **Items you can inspect**: the mouse over an item shows the game's own tooltip with its real stats; a click opens its
+  card; Ctrl+click the dressing room; Shift+click links it in chat.
+- **Each row**: required level, name with its icon and quality colour, quality, item level and where it comes from
+  (boss, quest or world drop, with the dungeon or raid and its levels).
+- **Sorted by required level**, low to high or high to low: the level to equip the item, not its item level. "No level"
+  for an item that needs none; "Lv ?" until the game loads it.
+- **Class and slot filters**, and where each item comes from also on its tooltip and card. `/flc atlas item <id>` opens
+  the Atlas on that item.
+- Loot lists stay **in review** (no drop chances).
+
 ## 0.8.1.3 — 2026-11-10
 
 A maintenance release: everything we fixed since 0.8.1.2 so the guide takes you from quest to quest better, and a few
